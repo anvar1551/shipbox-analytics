@@ -1,11 +1,11 @@
 const axios = require("axios");
 const admin = require("firebase-admin");
-const serviceAccount = require("./credentials/firebase.json");
+const serviceAccount = require("../credentials/firebase.json");
 
-const { formatDate } = require("./utils/formatDate");
-const { getOrdersAndHistory } = require("./utils/writeOrdersToFirestore");
-const { readToken } = require("./utils/readTokenFromFirestore");
-const { getToken } = require("./utils/getToken");
+const { formatDate } = require("../utils/formatDate");
+const { getOrdersAndHistory } = require("../utils/writeOrdersToFirestore");
+const { readToken } = require("../utils/readTokenFromFirestore");
+const { getToken } = require("../utils/getToken");
 
 require("dotenv").config();
 const ordersUrl = process.env.GET_ID_URL;
